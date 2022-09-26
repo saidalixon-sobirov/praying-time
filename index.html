@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namoz vaqti</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="back-noise"></div>
+
+    <div class="wrapper">
+      <h1 class="title">Namoz Vaqtlari</h1>
+      <div class="line"></div>
+
+      <div class="select-region">
+        <h2 class="region-title">Hududni tanlang:</h2>
+        <header>
+          <div class="accordion active">
+            <strong id="region">Toshkent</strong>
+            <span id="toggle">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </div>
+
+          <ul class="panel">
+            <li>Andijon</li>
+            <li>Buxoro</li>
+            <li>Farg'оna</li>
+            <li>Namangan</li>
+            <li>Toshkent</li>
+            <li>Guliston</li>
+            <li>Jizzax</li>
+            <li>Navoiy</li>
+            <li>Samarqand</li>
+            <li>Qarshi</li>
+            <li>Termiz</li>
+            <li>Xiva</li>
+            <li>Nukus</li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="region-info">
+        <div class="region-name">
+          <p class="region-name__title">Mintaqa:</p>
+          <p class="region-name__selected-city yellow-text">
+            <span id="reg"> Toshkent</span> shahri
+          </p>
+        </div>
+
+        <div class="time">
+          <img src="./img/calendar.png" alt="calendar" class="calendar-icon" />
+          <div class="dates">
+            <p class="date yellow-text">Shanba, 6-yanvar</p>
+            <p class="date" id="hijri">Safar 27, 1444</p>
+          </div>
+
+          <p class="times">
+            <span id="hour">00:00</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card">
+          <p class="time yellow-text">Tong</p>
+          <img src="./img/tong.png" alt="Tong" class="card-img" />
+          <h1 class="pray-time">00:00</h1>
+        </div>
+
+        <div class="card">
+          <p class="time yellow-text">Quyosh</p>
+          <img src="./img/quyosh.png" alt="Quyosh" class="card-img" />
+          <h1 class="pray-time">00:00</h1>
+        </div>
+
+        <div class="card">
+          <p class="time yellow-text">Peshin</p>
+          <img src="./img/peshin.png" alt="Peshin" class="card-img" />
+          <h1 class="pray-time">00:00</h1>
+        </div>
+
+        <div class="card">
+          <p class="time yellow-text">Asr</p>
+          <img src="./img/asr.png" alt="Asr" class="card-img" />
+          <h1 class="pray-time">00:00</h1>
+        </div>
+
+        <div class="card">
+          <p class="time yellow-text">Shom</p>
+          <img src="./img/shom.png" alt="Shom" class="card-img" />
+          <h1 class="pray-time">00:00</h1>
+        </div>
+
+        <div class="card">
+          <p class="time yellow-text">Xufton</p>
+          <img src="./img/xufton.png" alt="Xufton" class="card-img" />
+          <h1 class="pray-time">00:00</h1>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://rawgit.com/abdennour/hijri-date/master/cdn/hijri-date-latest.js"
+      type="text/javascript"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
